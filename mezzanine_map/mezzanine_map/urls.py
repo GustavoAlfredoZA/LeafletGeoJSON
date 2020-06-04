@@ -7,6 +7,7 @@ from django.views.i18n import set_language
 
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
+from mezzanine_map.views import map_View,map
 
 # Uncomment to use blog as home page. See also urlpatterns section below.
 # from mezzanine.blog import views as blog_views
@@ -21,7 +22,9 @@ urlpatterns = i18n_patterns(
     # Change the admin prefix here to use an alternate URL for the
     # admin interface, which would be marginally more secure.
     url("^admin/", include(admin.site.urls)),
-    url("^map/", include(map.site.urls)),
+    url(r'^map/', map_View.as_view()),
+    
+
 )
 
 if settings.USE_MODELTRANSLATION:
