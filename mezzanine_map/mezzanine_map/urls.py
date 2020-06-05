@@ -1,10 +1,8 @@
 from __future__ import unicode_literals
-
 from django.conf.urls import include, url
 from django.conf.urls.i18n import i18n_patterns
 from django.contrib import admin
 from django.views.i18n import set_language
-
 from mezzanine.core.views import direct_to_template
 from mezzanine.conf import settings
 from mezzanine_map.views import map_View,map
@@ -23,7 +21,7 @@ urlpatterns = i18n_patterns(
     # admin interface, which would be marginally more secure.
     url("^admin/", include(admin.site.urls)),
     url(r'^map/', map_View.as_view()),
-    
+
 
 )
 
