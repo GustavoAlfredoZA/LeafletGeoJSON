@@ -12,7 +12,7 @@ class map(View):
 class map_View(View):
     initial={'kay':'value'}
     #form_class=Paciente_Form
-    template_name = 'map.html'
+    template_name = 'mezzanine_map/map.html'
 
     def get(self, request, *args, **kwargs):
         #var1 = self.kwargs['var1']
