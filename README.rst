@@ -8,7 +8,7 @@ Quick start
 ------------
 
 1.-Install leaflet for django::
-pip install django-leaflet
+  pip install django-leaflet
 
 1.- Add mezzanine map to INSTALLED_APPS
 INSTALLED_APPS = [
