@@ -20,7 +20,7 @@ Quick start
     ...
   ]
 
-3.- Include the polls URLconf in your project urls.py like this::
+3.- Include the polls URLconf in yourProject/yourProject/urls.py like this::
 
     path('map/', include('mezzanine_gasStation_map.urls')),
 
