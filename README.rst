@@ -20,13 +20,14 @@ Quick start
     ...
   ]
 
-3.- Include the polls URLconf in yourProject/yourProject/urls.py like this::
+3.- Include in yourProject/yourProject/urls.py::
 
-    path('map/', include('mezzanine_gasStation_map.urls')),
+  import mezzanine_gasStation_map.urls
 
-4.- Include in yourProject/yourProject/urls.py::
+4.- Include the polls URLconf in yourProject/yourProject/urls.py like this::
 
-    import mezzanine_gasStation_map.urls
+    url('map/', include('mezzanine_gasStation_map.urls')),
+
 
 5.- Create links in yourProject::
 
