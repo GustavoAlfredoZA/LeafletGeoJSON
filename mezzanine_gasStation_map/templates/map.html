@@ -4,15 +4,15 @@
 {% load staticfiles %}
 {% load i18n %}
 {%block extra_js}
+  {% leaflet_js %}
   <script src="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.js"></script>
   <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js" integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew==" crossorigin=""></script>
 {%endblock}
 {% block meta_title %}{% trans "Map" %}{% endblock %}
 {% block title %}{% trans "Map" %}{% endblock %}
 {% block extra_css  %}
-  {% leaflet_js %}
   {% leaflet_css %}
-  <link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />
+  <!--<link rel="shortcut icon" type="image/x-icon" href="docs/images/favicon.ico" />-->
   <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css" integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ==" crossorigin=""/>
   <link rel="stylesheet" href="https://unpkg.com/leaflet-routing-machine@latest/dist/leaflet-routing-machine.css" />
 {% endblock %}
