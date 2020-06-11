@@ -1,3 +1,4 @@
+from django.shortcuts import render
 from django.views.generic import View
 from django.shortcuts import render
 from django.http import HttpResponseRedirect
@@ -21,6 +22,3 @@ class map_View(View):
         #var1 = self.kwargs['var1']
         return render(request, self.template_name)
 
-    #@method_decorator(login_required)
-    def dispatch(self, *args, **kwargs):
-        return super(map_View, self).dispatch(*args, **kwargs)

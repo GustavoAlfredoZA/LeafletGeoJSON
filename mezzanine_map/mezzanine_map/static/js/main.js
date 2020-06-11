@@ -37,7 +37,7 @@ function onMapClick(e) {
   .openOn(mymap);
 }
 
-$.getJSON("../../static/mezzanine_map/js/data.json", function(data) {
+$.getJSON("../static/mezzanine_map/js/data.json", function(data) {
     var geojson = L.geoJson(data, {
 
       onEachFeature: function (feature, layer) {
