@@ -1,5 +1,5 @@
 =============
-Mezzanine-map
+mezzanine_gasStation_map
 =============
 
 Plugin for mezzanine
