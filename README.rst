@@ -10,8 +10,8 @@ Quick start
 1.- Add mezzanine map to INSTALLED_APPS
 INSTALLED_APPS = [
         ...
-        'mezzanine_map',
+        'mezzanine_gasStation_map',
     ]
 2.- Include the polls URLconf in your project urls.py like this::
 
-    path('map/', include('mezzanine_map.urls')),
+    path('map/', include('mezzanine_gasStation_map.urls')),
