@@ -31,5 +31,5 @@ Quick start
 5.- Create links in yourProject::
 
     ln -s /home/user/git/LeafletGeoJSON/mezzanine_gasStation_map .
-    ln -s /home/user/git/LeafletGeoJSON/mezzanine_gasStation_map/static ./static
-    ln -s /home/user/git/LeafletGeoJSON/mezzanine_gasStation_map/templates ./templates
+    ln -s /home/user/git/LeafletGeoJSON/mezzanine_gasStation_map/static ./static/mezzanine_gasStation_map
+    ln -s /home/user/git/LeafletGeoJSON/mezzanine_gasStation_map/templates ./templates/mezzanine_gasStation_map
